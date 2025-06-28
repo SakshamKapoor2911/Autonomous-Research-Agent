@@ -114,9 +114,9 @@ Usage
 Open the Jupyter Notebook provided in the repository.
 
 Locate the cell where the Wikipedia API is initialized:
-
+```
 wiki_wiki = wikipediaapi.Wikipedia(user_agent='MilvusDeepResearchBot (<insert your email>)', language='en')
-
+```
 Replace <insert your email> with your own email address as per Wikipedia's API etiquette.
 
 Run the cells of the notebook sequentially to execute the full research and synthesis pipeline. The final report will be saved as report.md.
