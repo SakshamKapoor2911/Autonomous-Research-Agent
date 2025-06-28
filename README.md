@@ -59,7 +59,7 @@ Knowledge Base Creation: The agent identifies the core subject, fetches the corr
 Iterative Answering: For each sub-question, the agent retrieves the most relevant text chunks from Milvus and feeds them to the LLM as context to generate a focused answer.
 
 Synthesis: The agent assembles the questions (as headers) and the generated answers into a single, structured Markdown file.
-
+```
 🛠️ Tech Stack
 Core Logic: Python
 
@@ -83,12 +83,12 @@ pip package manager
 
 Installation
 Clone the repository:
-
+```
 git clone [https://github.com/yourusername/your-repo-name.git](https://github.com/yourusername/your-repo-name.git)
 cd your-repo-name
-
+```
 Create a requirements.txt file with the following contents:
-
+```
 unsloth
 pymilvus
 wikipedia-api
@@ -105,11 +105,11 @@ transformers
 tqdm
 bitsandbytes
 accelerate
-
+```
 Install the required packages:
-
+```
 pip install -r requirements.txt
-
+```
 Usage
 Open the Jupyter Notebook provided in the repository.
 
@@ -121,7 +121,7 @@ Replace <insert your email> with your own email address as per Wikipedia's API e
 
 Run the cells of the notebook sequentially to execute the full research and synthesis pipeline. The final report will be saved as report.md.
 
-📄 Example Output
+## 📄 Example Output
 For the query "How has The Simpsons changed over time?", the agent generates the following structured report:
 
 The evolution of The Simpsons as a show over time, covering changes in content, humor, character development, animation, and its role in society.
@@ -133,7 +133,7 @@ How did the animation style of The Simpsons change over the years?
 The animation style of The Simpsons has undergone significant changes since its debut. Initially, the show had a rougher, more inconsistent look, which was refined after the first season. Over the years, the animation became smoother and more polished with the adoption of digital coloring in the mid-1990s and a complete switch to digital animation in the 2000s. The transition to high-definition in 2009 further enhanced the visual quality, providing more vibrant colors and detailed backgrounds while maintaining the show's iconic aesthetic.
 ... and so on for all sub-questions.
 
-🔮 Future Work
+## 🔮 Future Work
 Multi-Source RAG: Expand the knowledge base beyond a single Wikipedia page by enabling the agent to perform web searches and pull information from multiple URLs.
 
 Self-Correction & Validation: Implement a validation step where the agent reviews its generated sub-questions and answers for coherence and relevance, re-prompting itself if the quality is low.
