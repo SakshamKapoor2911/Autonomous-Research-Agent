@@ -52,9 +52,9 @@ The agent follows a four-stage process to transform a high-level question into a
 | (eg "Simpsons") |      | (Hierarchical)        |      | (Iterative)       |      | Synthesis       |      | Report         |
 +-----------------+      +-----------------------+      +-------------------+      +-----------------+      +----------------+
 
-Query Decomposition: The LLM receives the initial query and breaks it down into a JSON structure of main questions and sub-questions.
+Query Decomposition: The LLM receives the query and breaks it down into a JSON structure of main questions and sub-questions.
 
-Knowledge Base Creation: The agent fetches corresponding Wikipedia articles for the subject and embeds their chunks into a vector store.
+Knowledge Base Creation: The agent fetches Wikipedia articles for the subject and embeds their chunks into a vector store.
 
 Iterative Answering: For each sub-question, the agent retrieves the most relevant chunks from Milvus to write a focused answer.
 
