@@ -47,10 +47,10 @@ This project showcases an end-to-end agentic workflow, from dynamic planning and
 The agent follows a four-stage process to transform a high-level question into a detailed report.
 
 ```plaintext
-+-----------------+      +-----------------------+      +-------------------+      +-----------------+      +----------------+
-|  Initial Query  |----->|  Query Decomposition  |----->|   RAG Answering   |----->| Answer          |----->| Markdown       |
-| (eg "Simpsons") |      | (Hierarchical)        |      | (Iterative)       |      | Synthesis       |      | Report         |
-+-----------------+      +-----------------------+      +-------------------+      +-----------------+      +----------------+
++-----------------+      +-----------------------+      +------------------+      +-----------------+      +----------------+
+|  Initial Query  |----->|  Query Decomposition  |----> |   RAG Answering  |----->| Answer          |----->| Markdown       |
+| (eg "Simpsons") |      | (Hierarchical)        |      | (Iterative)      |      | Synthesis       |      | Report         |
++-----------------+      +-----------------------+      +------------------+      +-----------------+      +----------------+
 
 Query Decomposition: The LLM receives the query and breaks it down into a JSON structure of main questions and sub-questions.
 
