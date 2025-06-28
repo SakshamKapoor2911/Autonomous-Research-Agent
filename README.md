@@ -56,7 +56,7 @@ Query Decomposition: The LLM receives the query and breaks it down into a JSON s
 
 Knowledge Base Creation: The agent fetches Wikipedia articles for the subject and embeds their chunks into a vector store.
 
-Iterative Answering: For each sub-question, the agent retrieves the most relevant chunks from Milvus to write focused answers.
+Recursive Answers: For each sub-question, the agent retrieves the most relevant chunks from Milvus to write focused answers.
 
 Synthesis: The agent assembles the questions (as headers) and the generated answers into a single, structured Markdown file.
 ```
